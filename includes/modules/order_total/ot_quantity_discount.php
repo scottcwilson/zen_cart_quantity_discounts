@@ -2,7 +2,7 @@
 /**
  * Quantity Discounts - an order_total module for Zen Cart
  * URL: http://www.thatsoftwareguy.com/zencart_quantity_discounts.html
- * Version 1.12 
+ * Version 1.12.1
  * By Scott Wilson (swguy)
  * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2013
  * @copyright Portions Copyright 2004-2006 Zen Cart Team
@@ -78,8 +78,7 @@ class ot_quantity_discount {
       }
    }
 
-
-   function ot_quantity_discount() {
+   function __construct() {
       $this->code = 'ot_quantity_discount';
       $this->title = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_TITLE;
       $this->description = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_DESCRIPTION;
