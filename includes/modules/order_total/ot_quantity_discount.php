@@ -2,9 +2,9 @@
 /**
  * Quantity Discounts - an order_total module for Zen Cart
  * URL: http://www.thatsoftwareguy.com/zencart_quantity_discounts.html
- * Version 1.12.1
+ * Version 1.13
  * By Scott Wilson (swguy)
- * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2013
+ * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2018
  * @copyright Portions Copyright 2004-2006 Zen Cart Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
@@ -82,7 +82,8 @@ class ot_quantity_discount {
       $this->code = 'ot_quantity_discount';
       $this->title = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_TITLE;
       $this->description = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_DESCRIPTION;
-      $this->sort_order = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_SORT_ORDER;
+      $this->sort_order = defined('MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_SORT_ORDER') ? MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_SORT_ORDER : null;
+      if (null === $this->sort_order) return false;
       $this->include_tax = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_INC_TAX;
       $this->calculate_tax = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_CALC_TAX;
       $this->total_basis = MODULE_ORDER_TOTAL_QUANTITY_DISCOUNT_TOTAL_BASIS;
