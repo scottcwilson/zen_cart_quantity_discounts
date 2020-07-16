@@ -1,6 +1,6 @@
 # Quantity Discounts Module for Zen Cart 
 
-Version 1.13
+Version 1.14
 
 Author: Scott Wilson
 <http://www.thatsoftwareguy.com>

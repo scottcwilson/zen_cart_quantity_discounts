@@ -2,9 +2,9 @@
 /**
  * Quantity Discounts - an order_total module for Zen Cart
  * URL: http://www.thatsoftwareguy.com/zencart_quantity_discounts.html
- * Version 1.13
+ * Version 1.14
  * By Scott Wilson (swguy)
- * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2018
+ * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2020
  * @copyright Portions Copyright 2004-2006 Zen Cart Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
@@ -233,7 +233,7 @@ class ot_quantity_discount {
       if ($cart_array == true) {
          // Discount by category or item number
          /** @noinspection PhpUnusedLocalVariableInspection */
-         while (list($keypos, $listpos) = each($key_list)) {
+         foreach ($key_list as $keypos => $listpos) {
             if ($this->total_basis == 'Total By Category') {
                $description = zen_get_category_name($cat_list_back[$listpos]['category'], $_SESSION['languages_id']) . " " . ITEMS;
                $count = $cat_list[$listpos];

@@ -1,5 +1,5 @@
 Quantity Discounts Module for Zen Cart 
-Version 1.13
+Version 1.14
 --------------------------------------------------
 Released under the GNU General Public License
 --------------------------------------------------
@@ -17,6 +17,7 @@ PLEASE READ THIS PAGE PRIOR TO POSTING A QUESTION TO THE FORUM.
 No warranties expressed or implied; use at your own risk.
 
 History: 
+1.14 07/16/2020 Updates for PHP7.3
 1.13 12/20/2018 Updates for PHP7
 1.12 04/16/2013 Code Inspection and formatting; no functional changes.
 1.11 04/03/2010 Add VAT setting for taxes.
