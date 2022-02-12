@@ -2,9 +2,9 @@
 /**
  * Quantity Discounts - an order_total module for Zen Cart
  * URL: http://www.thatsoftwareguy.com/zencart_quantity_discounts.html
- * Version 1.14
+ * Version 1.15
  * By Scott Wilson (swguy)
- * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2020
+ * @copyright That Software Guy (www.thatsoftwareguy.com) 2006-2022
  * @copyright Portions Copyright 2004-2006 Zen Cart Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
@@ -157,7 +157,7 @@ class ot_quantity_discount {
          reset($order->info['tax_groups']);
          $taxGroups = array_keys($order->info['tax_groups']);
          foreach ($taxGroups as $key) {
-            if ($od_amount[$key]) {
+            if (isset($od_amount[$key])) {
                $order->info['tax_groups'][$key] -= $od_amount[$key];
                if ($this->calculate_tax != 'VAT') {
                   $order->info['total'] -= $od_amount[$key];
@@ -204,12 +204,23 @@ class ot_quantity_discount {
          // OK, it's an item you want to include.  Add it to the lists:
          // by category
          $cat_list_back[$products[$i]['category']] = &$products[$i];
+         if (!isset($cat_list[$products[$i]['category']])) {
+            $cat_list[$products[$i]['category']] = 0; 
+         } 
          $cat_list[$products[$i]['category']] += $quantity;
+         if (!isset($cat_list_price[$products[$i]['category']])) { 
+            $cat_list_price[$products[$i]['category']] = 0; 
+         } 
          $cat_list_price[$products[$i]['category']] += ($price * $quantity);
-
          // by products
          $prod_list_back[$products[$i]['id']] = &$products[$i];
+         if (!isset($prod_list[$products[$i]['id']])) { 
+            $prod_list[$products[$i]['id']] = 0;
+         }
          $prod_list[$products[$i]['id']] += $quantity;
+         if (!isset($prod_list_price[$products[$i]['id']])) { 
+            $prod_list_price[$products[$i]['id']] = 0; 
+         }
          $prod_list_price[$products[$i]['id']] += ($price * $quantity);
 
          // by cart total
