@@ -1,13 +1,13 @@
 # Quantity Discounts Module for Zen Cart 
 
-Version 1.15
+Version 2.1 
 
 Author: Scott Wilson
-<http://www.thatsoftwareguy.com>
+<https://www.thatsoftwareguy.com>
 
 Even more information on this contribution is provided in
 
-<http://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
+<https://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
 
 ## Overview: 
 This mod permits a shop to define up to five (admin specified) discount levels
@@ -136,7 +136,7 @@ add code to the user exits as described above.
 7. If you wish, get a copy of the Quantity Discounts Promotional Page by 
 following the links on 
 
-<http://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
+<https://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
 
 This page displays your Quantity Discount policy.
 
@@ -171,11 +171,11 @@ my web page for retrieving and formatting this information.
 `apply_special_item_discount()` exits, you should add text
 below the call to `get_html_policy()` to describe these special cases. 
 
-* If you are also using the [Discount Preview Extension](http://www.thatsoftwareguy.com/zencart_discount_preview.html), please be sure that
+* If you are also using the [Discount Preview Extension](https://www.thatsoftwareguy.com/zencart_discount_preview.html), please be sure that
 the second and third statements above in your code are `include_once` and not
 `include` as they were formerly.
 
 ## Help
-* Main documentation: <http://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
-* Forum help page: <http://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
+* Main documentation: <https://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
+* Forum help page: <https://www.thatsoftwareguy.com/zencart_quantity_discounts.html>
 

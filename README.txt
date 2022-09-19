@@ -1,44 +1,20 @@
 Quantity Discounts Module for Zen Cart 
-Version 1.14
+Version 2.1 
 --------------------------------------------------
 Released under the GNU General Public License
 --------------------------------------------------
 Author: Scott Wilson
-http://www.thatsoftwareguy.com 
+https://www.thatsoftwareguy.com 
 Zen Forum PM swguy
-Donations welcome at http://donate.thatsoftwareguy.com/
+Donations welcome at https://donate.thatsoftwareguy.com/
 
 Even more information on this contribution is provided in
 
-http://www.thatsoftwareguy.com/zencart_quantity_discounts.html
+https://www.thatsoftwareguy.com/zencart_quantity_discounts.html
 
 PLEASE READ THIS PAGE PRIOR TO POSTING A QUESTION TO THE FORUM.
 
 No warranties expressed or implied; use at your own risk.
-
-History: 
-1.14 07/16/2020 Updates for PHP7.3
-1.13 12/20/2018 Updates for PHP7
-1.12 04/16/2013 Code Inspection and formatting; no functional changes.
-1.11 04/03/2010 Add VAT setting for taxes.
-1.10a 02/13/2010 Remove donate link for forum rules compliant.
-1.10 05/10/2008 Make explanatory link show up only on checkout page, adding 
-   discounts by dollars spent.
-1.9 01/06/2008 Remove unused code in order total calculation
-1.8 12/11/2007 Add compatibility for 1.3.8 changes.
-1.7 11/19/2007 Add per item currency discount
-1.6 09/06/2007 Fix computational error in get_discounted_prices();
-               standardize labels for level/amount fields in Admin.
-1.5 03/31/2007 Fix errant line accidentally left in setup() during testing.
-1.4 01/13/2007 Added ability to specify {level, discount} pairs so that
-  the limit of 5 in the admin screen could be exceeded.
-  Added many more options for creating marketing text.
-1.3 09/26/2006 Updated documentation; No functional difference from 1.2.
-1.2 09/04/2006 Fixed sales tax calculation for various combinations;
-  integrated with 1.3.5 fixes
-1.1 08/24/2006 User exits for various customizations, support for 
-   dynamic creation of discount policy explanation, minor fixes. 
-1.0 08/12/2006 - First Release 
 
 --------------------------------------------------
 Overview: 
@@ -168,7 +144,7 @@ www.thatsoftwareguy.com
 7. If you wish, get a copy of the Quantity Discounts Promotional Page by 
 following the links on 
 
-http://www.thatsoftwareguy.com/zencart_quantity_discounts.html
+https://www.thatsoftwareguy.com/zencart_quantity_discounts.html
 
 The Quantity Discounts Promotional Page displays your Quantity Discount policy.
 

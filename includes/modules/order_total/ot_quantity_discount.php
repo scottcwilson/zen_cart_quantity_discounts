@@ -11,8 +11,36 @@
  */
 
 class ot_quantity_discount {
-   var $title, $output;
-   var $explanation;
+   public $explanation;
+
+    protected $_check;
+    public $code;
+    public $calculate_tax;
+    public $credit_class;
+    protected $deduction;
+    public $description;
+    public $include_shipping;
+    public $include_tax;
+    public $sort_order;
+    public $tax_class;
+    public $title;
+    public $output = [];
+
+    protected $total_basis;
+    protected $units;
+    protected $counting_method;
+    protected $total_level_1;
+    protected $total_discount_1;
+    protected $total_level_2;
+    protected $total_discount_2;
+    protected $total_level_3;
+    protected $total_discount_3;
+    protected $total_level_4;
+    protected $total_discount_4;
+    protected $total_level_5;
+    protected $total_discount_5;
+    protected $extra_levels;
+    protected $extra_discounts;
 
    // Add categories you wish to exclude to this list.
    // Go to Admin->Catalog->Categories/Products and look
